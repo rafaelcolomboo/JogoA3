@@ -95,4 +95,19 @@ Se quiser contribuir:
 
 Projeto educativo - Livre para uso
 
-# JogoA3
+## 📥 Download
+
+Distribuição pronta (Windows 64-bit) disponível em `PacmanA3-release.zip` no diretório do projeto. O ZIP contém:
+
+- `PacmanA3.exe` (executável)
+- `README.md`
+- `requirements.txt`
+
+Como executar (PowerShell):
+
+```powershell
+cd "C:\caminho\para\pasta\onde\extraiu\o\ZIP"
+.\PacmanA3.exe
+```
+
+Se o Windows bloquear o arquivo ao baixar, clique com o botão direito no `.exe`, escolha **Propriedades** e selecione **Desbloquear** se disponível. Se houver erro de DLL, instale o Microsoft Visual C++ Redistributable.
