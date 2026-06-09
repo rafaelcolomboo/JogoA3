@@ -1,10 +1,10 @@
 """Entidade do usuário navegando na rede (antigo Pac-Man)."""
 import math
 import pygame
-from utils.config import TAMANHO_CELULA, COLUNAS, OFFSET_Y, TAMANHO_AVATAR, DURACAO_VPN, COR_ESCUDO
-from entities.direcao import Direcao
-from entities.dado import TipoDado
-from utils.arte_jogador import criar_animacao_jogador
+from src.utils.config import TAMANHO_CELULA, COLUNAS, OFFSET_Y, TAMANHO_AVATAR, DURACAO_VPN, COR_ESCUDO
+from src.entities.direcao import Direcao
+from src.entities.dado import TipoDado
+from src.utils.arte_jogador import criar_animacao_jogador
 
 
 class Jogador:

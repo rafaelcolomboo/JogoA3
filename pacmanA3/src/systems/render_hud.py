@@ -1,6 +1,6 @@
 """Painel superior: pontuação, arquivos, exposição e vidas."""
 import pygame
-from utils.config import (
+from src.utils.config import (
     LARGURA, COR_TEXTO, COR_EMAIL, COR_EXPOS_VERDE,
     COR_EXPOS_LARAN, COR_EXPOS_VERM,
 )

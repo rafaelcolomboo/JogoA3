@@ -1,6 +1,6 @@
 import pygame
 """Tela inicial do jogo."""
-from utils.config import LARGURA, COR_AVATAR, COR_EMAIL, COR_TEXTO, COR_VPN, COR_EXPOS_LARAN
+from src.utils.config import LARGURA, COR_AVATAR, COR_EMAIL, COR_TEXTO, COR_VPN, COR_EXPOS_LARAN
 
 
 def desenhar_menu(tela, fonte_grande, fonte_media, fonte_pequena):
@@ -26,13 +26,29 @@ def desenhar_tela_continuar(tela, fonte_grande, fonte_media, fonte_pequena, dici
     espacamento = 80 
 
     ameacas = [
-        ("Virus", "Código malicioso que infecta e corrompe seus dados.", (255, 150, 50), "Virus"), 
+        ("Vírus", "Código malicioso que infecta e corrompe seus dados.", (255, 150, 50), "Vírus"), 
         ("Ransomware", "Criptografa seus arquivos.", (200, 50, 50), "Ransomware"),
         ("Spyware", "Monitora tudo o que você digita.", (150, 150, 255), "Spyware"),
         ("Hacker", "Invade seu sistema e te neutraliza.", (100, 150, 255), "Hacker")
     ]
 
     pos_y_atual = pos_y_inicial
+
+    def _wrap_text(text, font, max_width):
+        words = text.split()
+        lines = []
+        cur = ""
+        for w in words:
+            test = (cur + " " + w).strip()
+            if font.size(test)[0] <= max_width:
+                cur = test
+            else:
+                if cur:
+                    lines.append(cur)
+                cur = w
+        if cur:
+            lines.append(cur)
+        return lines
 
     for nome, descricao, cor, chave_imagem in ameacas:
         
@@ -48,8 +64,12 @@ def desenhar_tela_continuar(tela, fonte_grande, fonte_media, fonte_pequena, dici
         texto_nome = fonte_media.render(nome, True, cor)
         tela.blit(texto_nome, (pos_x_texto, pos_y_atual))
 
-        texto_desc = fonte_pequena.render(descricao, True, (180, 180, 180))
-        tela.blit(texto_desc, (pos_x_texto, pos_y_atual + 35))
+        # Quebra a descrição em múltiplas linhas e desenha, alinhada à esquerda
+        max_largura = LARGURA - pos_x_texto - 40
+        linhas = _wrap_text(descricao, fonte_pequena, max_largura)
+        for i, linha in enumerate(linhas):
+            texto_desc = fonte_pequena.render(linha, True, (180, 180, 180))
+            tela.blit(texto_desc, (pos_x_texto, pos_y_atual + 35 + i * (fonte_pequena.get_linesize())))
 
         pos_y_atual += espacamento
 

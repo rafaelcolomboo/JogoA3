@@ -1,7 +1,7 @@
 """Sprites e animação procedural do avatar do jogador."""
 import pygame
-from entities.direcao import Direcao
-from utils.config import COR_AVATAR, TAMANHO_AVATAR
+from src.entities.direcao import Direcao
+from src.utils.config import COR_AVATAR, TAMANHO_AVATAR
 
 
 def _criar_superficie() -> pygame.Surface:

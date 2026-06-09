@@ -2,26 +2,26 @@
 import copy
 import sys
 import pygame
-from utils.config import (
+from src.utils.config import (
     LARGURA, ALTURA, FPS, MAPA_BASE, COR_FUNDO, COR_VERMELHO,
     DURACAO_VPN, PENALIDADE_MORTE, SPAWN_INIMIGOS,
 )
-from entities.jogador import Jogador
-from entities.inimigo import Inimigo
-from entities.dado import TipoDado
-from entities.direcao import Direcao
-from systems.carregador_sprites import carregar_sprites_inimigos, carregar_sprite_vpn
-from systems.distribuicao_dados import criar_dados_do_mapa
-from systems.exposicao import SistemaExposicao
-from systems.colisao_inimigos import processar_colisoes
-from systems.feedback import TextoFlutuante
-from systems.render_cenario import desenhar_cenario
-from systems.render_hud import desenhar_hud
-from utils import arte_coletaveis
-from scenes.tela_menu import desenhar_menu
-from scenes.tela_menu import desenhar_tela_continuar
-from scenes.tela_overlay import desenhar_overlay
-from scenes.tela_resultado import desenhar_resultado_fase
+from src.entities.jogador import Jogador
+from src.entities.inimigo import Inimigo
+from src.entities.dado import TipoDado
+from src.entities.direcao import Direcao
+from src.systems.carregador_sprites import carregar_sprites_inimigos, carregar_sprite_vpn
+from src.systems.distribuicao_dados import criar_dados_do_mapa
+from src.systems.exposicao import SistemaExposicao
+from src.systems.colisao_inimigos import processar_colisoes
+from src.systems.feedback import TextoFlutuante
+from src.systems.render_cenario import desenhar_cenario
+from src.systems.render_hud import desenhar_hud
+from src.utils import arte_coletaveis
+from src.scenes.tela_menu import desenhar_menu
+from src.scenes.tela_menu import desenhar_tela_continuar
+from src.scenes.tela_overlay import desenhar_overlay
+from src.scenes.tela_resultado import desenhar_resultado_fase
 
 
 class ControleJogo:

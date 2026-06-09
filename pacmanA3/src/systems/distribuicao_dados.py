@@ -1,7 +1,7 @@
 """Criação e distribuição dos coletáveis no mapa."""
 import random
-from entities.dado import Dado, TipoDado
-from utils.config import MAPA_BASE, FREQ_LOCAL, FREQ_BANCO
+from src.entities.dado import Dado, TipoDado
+from src.utils.config import MAPA_BASE, FREQ_LOCAL, FREQ_BANCO
 
 
 def distribuir_tipos(posicoes: list) -> list[TipoDado]:

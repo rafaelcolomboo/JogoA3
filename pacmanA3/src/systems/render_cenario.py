@@ -1,6 +1,6 @@
 """Desenho do labirinto e fundo."""
-from utils.config import LINHAS, COLUNAS, OFFSET_Y
-from utils.arte_cenario import obter_fundo_grade, desenhar_parede_circuito, desenhar_nos_corredor
+from src.utils.config import LINHAS, COLUNAS, OFFSET_Y
+from src.utils.arte_cenario import obter_fundo_grade, desenhar_parede_circuito, desenhar_nos_corredor
 
 
 def desenhar_cenario(tela, mapa, dados, inimigos):

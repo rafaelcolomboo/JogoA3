@@ -1,12 +1,12 @@
 """Inimigos temáticos (vírus, spyware, ransomware, hacker)."""
 import random
 import pygame
-from utils.config import (
+from src.utils.config import (
     TAMANHO_CELULA, TAMANHO_SPRITE_INIMIGO, TAMANHO_HITBOX_INIMIGO,
     COLUNAS, OFFSET_Y, DURACAO_VPN,
 )
-from entities.direcao import Direcao
-from utils.arte_coletaveis import aplicar_efeito_desconectado
+from src.entities.direcao import Direcao
+from src.utils.arte_coletaveis import aplicar_efeito_desconectado
 
 _MARGEM_VISUAL = (TAMANHO_CELULA - TAMANHO_SPRITE_INIMIGO) // 2
 
@@ -23,7 +23,7 @@ class Inimigo:
             coluna: Coluna de spawn na grade.
             linha: Linha de spawn na grade.
             cor: Cor do placeholder quando não há PNG.
-            nome: Identificador do malware (ex.: Virus).
+            nome: Identificador do malware (ex.: Vírus).
             icone: Letra exibida no placeholder procedural.
             sprite: Imagem PNG carregada ou None para desenho procedural.
         """

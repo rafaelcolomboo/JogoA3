@@ -1,6 +1,6 @@
 """Overlay semitransparente para morte e game over."""
 import pygame
-from utils.config import LARGURA, ALTURA, COR_TEXTO
+from src.utils.config import LARGURA, ALTURA, COR_TEXTO
 
 
 def desenhar_overlay(tela, fonte_grande, fonte_media, fonte_pequena,

@@ -1,7 +1,7 @@
 """Textos flutuantes exibidos ao coletar dados."""
 
 import pygame
-from utils.config import DURACAO_FEEDBACK
+from src.utils.config import DURACAO_FEEDBACK
 
 class TextoFlutuante:
 

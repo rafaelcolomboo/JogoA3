@@ -1,8 +1,8 @@
 """Carrega sprites PNG dos assets com fallback procedural."""
 import os
 import pygame
-from utils.config import PASTA_INIMIGOS, PASTA_DADOS, IMAGENS_INIMIGOS, IMAGEM_VPN, TAMANHO_SPRITE_INIMIGO
-from utils.arte_coletaveis import criar_sprite_vpn
+from src.utils.config import PASTA_INIMIGOS, PASTA_DADOS, IMAGENS_INIMIGOS, IMAGEM_VPN, TAMANHO_SPRITE_INIMIGO
+from src.utils.arte_coletaveis import criar_sprite_vpn
 
 
 def carregar_imagem(caminho: str, tamanho: int) -> pygame.Surface | None:

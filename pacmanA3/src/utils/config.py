@@ -17,7 +17,7 @@ PASTA_INIMIGOS = _resolver_pasta("assets/sprites/inimigos", "assets/inimigos")
 PASTA_DADOS = _resolver_pasta("assets/sprites/dados", "assets/dados")
 
 IMAGENS_INIMIGOS = {
-    "Virus": "virus.png",
+    "Vírus": "virus.png",
     "Spyware": "spyware.png",
     "Ransomware": "ransomware.png",
     "Hacker": "hacker.png",
@@ -75,7 +75,7 @@ MSG_EDUCATIVA = {
 }
 
 SPAWN_INIMIGOS = [
-    (6, 5, "Virus", COR_VERMELHO, "V"),
+    (6, 5, "Vírus", COR_VERMELHO, "V"),
     (7, 5, "Spyware", COR_ROSA, "S"),
     (6, 6, "Ransomware", COR_CIANO, "R"),
     (7, 6, "Hacker", COR_LARANJA, "H"),

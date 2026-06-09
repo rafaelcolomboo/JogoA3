@@ -1,5 +1,5 @@
 """Sistema de barra de exposição de dados pessoais."""
-from utils.config import (
+from src.utils.config import (
     TAMANHO_CELULA, DISTANCIA_EXPOSICAO,
     TAXA_EXPOS_SOBE, TAXA_EXPOS_DESCE, PENALIDADE_MORTE,
 )

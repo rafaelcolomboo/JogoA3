@@ -23,12 +23,18 @@ Um jogo educativo desenvolvido em Python com **Pygame** que ensina sobre seguran
 
 ## 🚀 Como Jogar
 
-### Opção 1: Executável (Windows)
+### Opção 1: Download (ZIP)
+
+Baixe `PacmanA3-release.zip` na raiz do repositório e extraia em uma pasta. O ZIP contém o executável pronto para Windows 64-bit.
+
+Abra o PowerShell na pasta extraída e rode:
+
 ```powershell
-C:\Users\Rafael Colombo\Desktop\pacmanA3 (2)\pacmanA3 (2)\pacmanA3\dist\PacmanA3.exe
+.\PacmanA3.exe
 ```
 
 ### Opção 2: Código Fonte (Python)
+
 1. **Instale as dependências:**
    ```powershell
    pip install -r requirements.txt

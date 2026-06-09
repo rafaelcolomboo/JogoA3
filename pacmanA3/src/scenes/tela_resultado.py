@@ -1,6 +1,6 @@
 """Tela educativa ao concluir uma fase."""
 import pygame
-from utils.config import (
+from src.utils.config import (
     LARGURA, ALTURA, COR_AVATAR, COR_EMAIL, COR_LARANJA, COR_TEXTO, COR_VPN, MSG_EDUCATIVA,
 )
 

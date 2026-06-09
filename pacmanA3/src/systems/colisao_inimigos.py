@@ -1,5 +1,5 @@
 """Colisão entre jogador e inimigos."""
-from utils.config import PENALIDADE_MORTE
+from src.utils.config import PENALIDADE_MORTE
 
 
 def processar_colisoes(jogador, inimigos) -> tuple[str | None, str, tuple | None]:

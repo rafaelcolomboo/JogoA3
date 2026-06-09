@@ -1,11 +1,11 @@
 """Coletáveis do mapa: e-mail, localização, dados bancários e VPN."""
 import pygame
 from enum import Enum
-from utils.config import (
+from src.utils.config import (
 TAMANHO_CELULA, OFFSET_Y, VALOR_EMAIL, VALOR_LOCAL, VALOR_BANCO,
     COR_EMAIL, COR_LOCAL, COR_BANCO, COR_VPN,
 )
-from utils import arte_coletaveis
+from src.utils import arte_coletaveis
 
 
 class TipoDado(Enum):
