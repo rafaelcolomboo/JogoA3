@@ -1,0 +1,6 @@
+Sprites dos coletáveis:
+  powerup.png — ícone VPN (mega-dado)
+
+Caminho: assets/sprites/dados/
+
+Os demais coletáveis (e-mail, localização, banco) são gerados por código.

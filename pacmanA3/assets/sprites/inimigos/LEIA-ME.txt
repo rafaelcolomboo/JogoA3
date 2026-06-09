@@ -1,0 +1,4 @@
+Sprites dos inimigos (PNG com fundo transparente):
+  virus.png, spyware.png, ransomware.png, hacker.png
+
+Caminho: assets/sprites/inimigos/
