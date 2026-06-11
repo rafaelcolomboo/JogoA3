@@ -1,4 +1,4 @@
-# 🎮 Dados na Rede - Pacman A3
+# 🎮 Dados na Rede - A3
 
 Um jogo educativo desenvolvido em Python com **Pygame** inspirado no Pac-Man sobre coleta, armazenamento e uso de dados na internet, desenvolvido como trabalho acadêmico (A3 — Exploração Digital).
 
