@@ -1,15 +1,10 @@
 # 🎮 Dados na Rede - Pacman A3
 
-Um jogo educativo desenvolvido em Python com **Pygame** que ensina sobre segurança digital e coleta de dados na internet.
+Um jogo educativo desenvolvido em Python com **Pygame** inspirado no Pac-Man sobre coleta, armazenamento e uso de dados na internet, desenvolvido como trabalho acadêmico (A3 — Exploração Digital).
 
 ## 📋 Sobre o Jogo
 
-**Dados na Rede** é um jogo de plataforma educativo onde o jogador controla um personagem que coleta diferentes tipos de dados (emails, localizações, dados bancários) enquanto evita ameaças de segurança como vírus, ransomware, spyware e hackers.
-
-### Objetivos
-- Aprender sobre privacidade e segurança digital
-- Entender os diferentes tipos de ameaças cibernéticas
-- Consciência sobre coleta de dados na internet
+**Dados na Rede** o jogador navega por uma rede representada em estilo Matrix (verde neon sobre fundo escuro), coletando dados pessoais espalhados pelo mapa. Os inimigos personificam ameaças digitais: vírus, spyware, ransomware e hacker. O power-up VPN desconecta temporariamente os malwares, permitindo neutralizá-los.
 
 ## 🎯 Gameplay
 
@@ -21,7 +16,7 @@ Um jogo educativo desenvolvido em Python com **Pygame** que ensina sobre seguran
   - Localização: +30 pontos
   - Dados Bancários: +50 pontos
 
-## 🚀 Como Jogar
+## 🚀 Como Baixar
 
 ### Opção 1: Download (ZIP)
 
